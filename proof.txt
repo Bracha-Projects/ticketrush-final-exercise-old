@@ -1,0 +1,66 @@
+### git worktree list
+C:/Users/USER/Documents/Bracha/ticketrush              81f4983 [main]
+C:/Users/USER/Documents/Bracha/ticketrush-early-access 7d19cd2 [feature/early-access]
+C:/Users/USER/Documents/Bracha/ticketrush-review       6b6ec45 [review/noa-refund]
+C:/Users/USER/Documents/Bracha/ticketrush-waitlist     00f4cb2 [feature/waitlist]
+
+### git branch -a -vv
++ feature/early-access                                   7d19cd2 (C:/Users/USER/Documents/Bracha/ticketrush-early-access) Raise member ticket quota from 4 to 6
++ feature/waitlist                                       00f4cb2 (C:/Users/USER/Documents/Bracha/ticketrush-waitlist) Add joinWaitlist with email validation and dedupe
+  hotfix/price                                           1f6af06 Revert "perf: faster price formatting"
+* main                                                   81f4983 [origin/main] Stop tracking config.js with API key, add config.example.js
++ review/noa-refund                                      6b6ec45 (C:/Users/USER/Documents/Bracha/ticketrush-review) [origin/noa/refund: ahead 1] Add review of noa/refund: fee wrongly refunded, no input validation
+  remotes/origin/HEAD                                    -> origin/main
+  remotes/origin/bracha-eisenshtein/feature/early-access 7d19cd2 Raise member ticket quota from 4 to 6
+  remotes/origin/bracha-eisenshtein/feature/waitlist     00f4cb2 Add joinWaitlist with email validation and dedupe
+  remotes/origin/bracha-eisenshtein/hotfix/price         1f6af06 Revert "perf: faster price formatting"
+  remotes/origin/bracha-eisenshtein/main                 81f4983 Stop tracking config.js with API key, add config.example.js
+  remotes/origin/bracha-eisenshtein/result               d15c5b5 result bracha-eisenshtein 84/100
+  remotes/origin/bracha-eisenshtein/review/noa-refund    6b6ec45 Add review of noa/refund: fee wrongly refunded, no input validation
+  remotes/origin/dana/promo                              ab22eec test: add student discount tests
+  remotes/origin/main                                    81f4983 Stop tracking config.js with API key, add config.example.js
+  remotes/origin/noa/refund                              2056ecd test: refund tests
+  remotes/origin/ruth/fixes                              87fde97 wip: try new fonts
+
+### git log --graph --oneline --all -n 80
+* d15c5b5 (origin/bracha-eisenshtein/result) result bracha-eisenshtein 84/100
+* 81f4983 (HEAD -> main, tag: v1.1, origin/main, origin/bracha-eisenshtein/main, origin/HEAD) Stop tracking config.js with API key, add config.example.js
+* acff239 fix: correct concert date in events.js
+*   4707f56 Merge branch 'feature/early-access'
+|\  
+| * 7d19cd2 (origin/bracha-eisenshtein/feature/early-access, feature/early-access) Raise member ticket quota from 4 to 6
+| *   0b7c8e8 Merge dana/promo: combine member and student discounts (higher one wins)
+| |\  
+| | * ab22eec (origin/dana/promo) test: add student discount tests
+| | * 56e7ecd feat: student discount (15%)
+| * | 3a8d419 Merge branch 'main' into feature/early-access
+| |\| 
+| * | d95f1a4 Add member discount and quota to pricing
+* | | 00f4cb2 (origin/bracha-eisenshtein/feature/waitlist, feature/waitlist) Add joinWaitlist with email validation and dedupe
+| |/  
+|/|   
+| | * 6b6ec45 (origin/bracha-eisenshtein/review/noa-refund, review/noa-refund) Add review of noa/refund: fee wrongly refunded, no input validation
+| | * 2056ecd (origin/noa/refund) test: refund tests
+| | * 0f8a6c0 feat: refund calculation for cancelled orders
+| |/  
+|/|   
+| | * 87fde97 (origin/ruth/fixes) wip: try new fonts
+| | * cb483fd debug: dump state to console
+| | * 6f0cb7d WIP: try removing ticket limits
+| | * 5e6d810 fix: correct concert date in events.js
+| | * 8e9c5b4 WIP: new checkout flow (do not merge)
+| |/  
+|/|   
+* | 1f6af06 (origin/bracha-eisenshtein/hotfix/price, hotfix/price) Revert "perf: faster price formatting"
+|/  
+* 6e5b25d feat: friendlier message for empty quantity
+* 9119fe2 fix: typo in hero heading
+* a61f4ad feat: add footer with links
+* 73924c4 perf: faster price formatting
+* 03bd4dd docs: update artist lineup text
+* c44fbf8 feat: add early-access promo banner
+* 62f48b5 (tag: v1.0) feat: purchase page UI
+* f4c58bc feat: payment provider config
+* 2cc7e97 feat: event details data
+* 8a944f6 feat: ticket price calculation with tests
+* ed1b1e9 Initial commit: project skeleton and exercise tooling
